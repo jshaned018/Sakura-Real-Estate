@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive real estate website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="main.html" class="logo" aria-current="page">SAKURA</a>
+    <nav class="navbar">
+        <a href="main.html#featured">featured</a>
+        <a href="main.html#services">services</a>
+        <a href="about.html">about us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="main.html#contact">contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="contact.html"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!---Inquire-->
+<section class="contact" id="contact">
+    <div class="contact-box" style="margin-top: 90px;">
+        <div class="contact-left">
+            <h3>INQUIRE NOW</h3>
+            <p>Sent your request here</p>
+
+            <form>
+                
+              <div class="form-group">
+                <input type="text" placeholder="First Name" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Last Name" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Phone Number" name="phoneNumber" pattern="[0-9]{1}-[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" name="email" required>
+            </div>
+            <div class="form-group">
+        <textarea rows="3" placeholder="Message to us!"></textarea>
+            </div>
+                
+                <div class="checkbox-wrapper-1">
+                    <input id="example-1" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-1" style="text-transform: none;">I want to receive News and Updates about Sakura Real Estate</label>
+                    <input id="example-2" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-2" style="text-transform: none;">I have read and agree with the website's Privacy Policy and Terms of Use</label>
+                  </div>
+                  
+                  <style>
+                    .checkbox-wrapper-1 *,
+                    .checkbox-wrapper-1 ::after,
+                    .checkbox-wrapper-1 ::before {
+                      box-sizing: border-box;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted {
+                      margin: 0;
+                      width: 0;
+                      height: 0;
+                      display: inline;
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      appearance: none;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted + label:before {
+                      content: "";
+                      display: inline-block;
+                      vertical-align: top;
+                      height: 1.15em;
+                      width: 1.15em;
+                      margin-right: 0.6em;
+                      color: rgba(0, 0, 0, 0.275);
+                      border: solid 0.06em;
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+                      border-radius: 0.2em;
+                      background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>') no-repeat center, white;
+                      background-size: 0;
+                      will-change: color, border, background, background-size, box-shadow;
+                      transform: translate3d(0, 0, 0);
+                      transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:enabled + label:active:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+                      background-color: #f0f0f0;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked + label:before {
+                      background-color: #3B99FC;
+                      background-size: 0.75em;
+                      color: rgba(0, 0, 0, 0.075);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled + label:active:before {
+                      background-color: #0a7ffb;
+                      color: rgba(0, 0, 0, 0.275);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:active:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:disabled + label:before {
+                      opacity: 0.5;
+                    }
+                  
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark + label:before {
+                      color: rgba(255, 255, 255, 0.275);
+                      background-color: #222;
+                      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="rgba(34, 34, 34, 0.999)" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>');
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled + label:active:before {
+                      background-color: #444;
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked + label:before {
+                      background-color: #a97035;
+                      color: rgba(255, 255, 255, 0.075);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled + label:active:before {
+                      background-color: #c68035;
+                      color: rgba(0, 0, 0, 0.275);
+                    }
+                  </style>
+                  
+               
+                <button type="submit" require="require">Submit</button>
+        </div>
+        <div class="contact-info">
+          <h2>We’d love to hear from you.</h2>
+          <h4><strong>Office Address:</strong></h4>
+            <p>JXF2+VWR, Bacolod, Negros Occidental, 6100</p>
+          <h4><strong>Questions? Comments? Contact Us!</strong></h4>
+          <p><strong>Call Us:</strong><br>
+          09993719102<br>
+          09991256821</p>
+          <h4 ><strong>Email Us:</strong><br></h4>
+          <p><a href="mailto:inquire@rockwell.com.ph"  style="text-decoration: none; text-transform: none;">inquire@sakura.com</a></p>
+          <h4><strong>Contact With Us:</strong><br></h4>
+          <a href="https://www.facebook.com/RockwellLandCorporation" style="text-decoration: none; font-size: 15px;"> <i class="fab fa-facebook"></i> SAKURARealEstate</a>
+        </div>
+      
+        
+        <div class="phone-numbers">
+          <h2 style=" color: #add5ff; font-size: 16px; margin-top: 80px;">Sakura Sales Inquiries</h2>
+          <p><strong>Sakure Center Bacolod Sales:</strong> 09456984394</p>
+          <p><strong>The Arton Sales:</strong> 09341229854</p>
+          <p><strong>Sakura Primaries Sales:</strong> 09439584759</p>
+          <p><strong>Terreno South Sales:</strong> 09489938992</p>
+          <p><strong>Sakura Bacolod Sales:</strong> 09283999193</p>
+         
+        </div>
+
+</section>
+
+      <div class="map" style="margin-left: 260px;">
+        <h4><strong>Maps & Directions:</strong></h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125485.31837371472!2d122.7998282972656!3d10.624739300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aece37003b299d%3A0x76edab08cdc348ed!2sBacolod%20Homes%20Royale!5e0!3m2!1sen!2sph!4v1716705176069!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+      
+      </div>
+    
+      <div class="credit">Copyright © 2024 SAKURA Philippines | all rights reserved! </div>
+    
+    <!-- contact section ends -->
+
+
+</body>
+</html>

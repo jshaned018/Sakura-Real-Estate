@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive real estate website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="main.html" class="logo" aria-current="page">SAKURA</a>
+    <nav class="navbar">
+        <a href="main.html#featured">featured</a>
+        <a href="main.html#services">services</a>
+        <a href="about.html">about us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="main.html#contact">contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="contact.html"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+
+    <!-- request Section -->
+    <section class="request" id="request">
+
+      <div class="box-container" style="margin-top: 90px;">
+        <div class="box">
+          <a href="#" class="fas fa-phone"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <img src="ava.png" alt="">
+          <h3>Shane Dedase</h3>
+          <div class="buttons">
+            <a href="#" class="btn"> Request Details</a>
+          </div>
+        </div>
+      </div>
+      <h2>Listings</h2>
+      <img src="list.png" alt="" width="80" height="90" style="margin-left: 500px; margin-top: 100px;">
+      <img src="list.png" alt="" width="90" height="100">
+      <img src="list.png" alt="" width="80" height="90">
+      <h1>No listing found</h1>
+      <p>Sorry, the listing you were searching for cannot be found. Please try again.</p>
+    </section>
+
+    <div class="filter">
+      <button id="toggleModal" class="filter-button"><i class="fas fa-filter"></i> Search Filter</button>
+      <div id="searchModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2 style="margin-top: 0;">Search Properties</h2>
+          <form id="searchForm" class="search-form">
+            <input type="text" id="keyword" name="keyword" placeholder="Enter keyword...">
+            <input type="number" id="minPrice" name="minPrice" placeholder="Min price...">
+            <input type="number" id="maxPrice" name="maxPrice" placeholder="Max price...">
+            <input type="submit" value="Search">
+          </form>
+        </div>
+      </div>
+      <div class="search-results" id="searchResults">
+
+        <style>
+         .filter {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+  
+        .filter-button {
+        position: absolute;
+        top: 430px; /* Adjust top position as needed */
+        right: 80px; /* Adjust right position as needed */
+        background-color: transparent;
+        border: none;
+        color: #05062a;
+        background-color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+        .modal {
+          display: none;
+          position: fixed;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          z-index: 1;
+          width: 250px;
+          background-color: #fefefe;
+          border: 1px solid #888;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .modal-content {
+          padding: 20px;
+        }
+        .close {
+          color: #aaa;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .close:hover {
+          color: black;
+        }
+        .search-form label {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        .search-form input[type="text"],
+        .search-form input[type="number"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        .search-form input[type="submit"] {
+          background-color: #040517;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .search-results {
+          margin-top: 20px;
+        }
+        </style>
+
+    <!-- End request Section -->
+    <script>
+      const toggleButton = document.getElementById('toggleModal');
+      const modal = document.getElementById('searchModal');
+      const closeButton = document.getElementById('closeModal');
+  
+      toggleButton.addEventListener('click', function() {
+        modal.style.display = 'block';
+      });
+  
+      closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+  
+      window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      });
+    </script>
+</body>
+</html>

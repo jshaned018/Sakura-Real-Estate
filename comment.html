@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKURA REAL ESTATE</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <style>
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+
+        .review {
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            margin-bottom: 10px;
+            display: flex; /* Display stars horizontally */
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+        }
+
+        label:before {
+            content: '\2605';
+        }
+
+        input[type="radio"]:checked ~ label {
+            color: #ffcc00;
+        }
+
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            resize: none;
+        }
+
+        button {
+            background-color: #4800ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0b0420;
+        }
+
+        .reviews {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .user-details h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .comment:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+    </style>
+
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="main.html" class="logo" aria-current="page">SAKURA</a>
+    <nav class="navbar">
+        <a href="main.html#featured">featured</a>
+        <a href="main.html#services">services</a>
+        <a href="about.html#about-us">about us</a>
+        <a href="faq.html#faq">FAQ</a>
+        <a href="contact.html">contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="login.html"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+<section class="review" id="review">
+    <div class="container" style="margin-top: 90px;">
+        <h1>Our Reviews</h1>
+        <div class="review">
+            <input type="text" id="name" placeholder="Your Name"> <!-- Name input field -->
+            <div class="stars">
+                <input type="radio" name="star" class="star-1" id="star-1">
+                <label for="star-1"></label>
+                <input type="radio" name="star" class="star-2" id="star-2">
+                <label for="star-2"></label>
+                <input type="radio" name="star" class="star-3" id="star-3">
+                <label for="star-3"></label>
+                <input type="radio" name="star" class="star-4" id="star-4">
+                <label for="star-4"></label>
+                <input type="radio" name="star" class="star-5" id="star-5">
+                <label for="star-5"></label>
+            </div>
+            <textarea id="review-text" placeholder="Write your review here..." style="color: #0b0420;"></textarea>
+            <button onclick="submitReview()" style="font-size: 20px;">Submit</button>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews:</h2>
+            <ul id="comment-list">
+                <!-- Existing comments will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<script>
+// Function to submit review
+function submitReview() {
+    var rating = document.querySelector('input[name="star"]:checked');
+    var comment = document.getElementById('review-text').value;
+    var name = document.getElementById('name').value; // Get the name input value
+
+    if (rating && comment && name) { // Check if all fields are filled
+        var stars = rating.className.split('-')[1];
+        var commentList = document.getElementById('comment-list');
+        var listItem = document.createElement('li');
+        
+        // Create the comment structure including name
+        listItem.innerHTML = '<div class="user-info">' +
+                                '<img src="user.png" alt="User">' +
+                                '<div class="user-details">' +
+                                    '<h3>' + name + '</h3>' +
+                                    '<div class="stars">' + '&#9733;'.repeat(parseInt(stars)) + '</div>' +
+                                '</div>' +
+                            '</div>' +
+                            '<p>' + comment + '</p>';
+        
+        commentList.appendChild(listItem); // Add the comment to the comment list
+
+        // Clear input fields
+        document.getElementById('review-text').value = '';
+        document.getElementById('name').value = '';
+        document.querySelector('input[name="star"]:checked').checked = false;
+    } else {
+        alert("Please fill in all fields before submitting.");
+    }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Real Estate Reviews</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sakura Real Estate Reviews</h1>
+        <div class="review">
+            <div class="stars">
+                <input type="radio" name="star" class="star-1" id="star-1">
+                <label for="star-1"></label>
+                <input type="radio" name="star" class="star-2" id="star-2">
+                <label for="star-2"></label>
+                <input type="radio" name="star" class="star-3" id="star-3">
+                <label for="star-3"></label>
+                <input type="radio" name="star" class="star-4" id="star-4">
+                <label for="star-4"></label>
+                <input type="radio" name="star" class="star-5" id="star-5">
+                <label for="star-5"></label>
+            </div>
+            <textarea placeholder="Write your review here..."></textarea>
+            <button onclick="submitReview()">Submit</button>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews:</h2>
+            <ul id="comment-list">
+                <li class="comment">
+                    <div class="user-info">
+                        <img src="user1.jpg" alt="User1">
+                        <div class="user-details">
+                            <h3>John Doe</h3>
+                            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>Amazing service! Sakura Real Estate helped me find the perfect home. Highly recommended.</p>
+                </li>
+                <li class="comment">
+                    <div class="user-info">
+                        <img src="user2.jpg" alt="User2">
+                        <div class="user-details">
+                            <h3>Jane Smith</h3>
+                            <div class="stars">&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <p>Great experience overall. The staff was friendly and professional.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+label:before {
+    content: '\2605';
+}
+
+input[type="radio"]:checked ~ label {
+    color: #ffcc00;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.reviews {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-details h3 {
+    margin: 0;
+    color: #333;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+    </style>
+
+    <script>
+      // Function to submit review
+function submitReview() {
+    var rating = document.querySelector('input[name="star"]:checked');
+    var comment = document.querySelector('textarea').value;
+
+    if (rating && comment) {
+        var stars = rating.className.split('-')[1];
+        var commentList = document.getElementById('comment-list');
+        var listItem = document.createElement('li');
+        listItem.innerHTML = '<div class="stars">' + '&#9733;'.repeat(parseInt(stars)) + '</div><p>' + comment + '</p>';
+        commentList.appendChild(listItem);
+
+        // Clear input fields
+        document.querySelector('textarea').value = '';
+        document.querySelector('input[name="star"]:checked').checked = false;
+    } else {
+        alert("Please rate and leave a comment before submitting.");
+    }
+}
+
+    </script>
+</body>
+</html>
