@@ -2,11 +2,683 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=main.html">
-    <title>Shane Portfolio</title>
+    <title>SAKURA REAL ESTATE</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
-    <p>Loading website...</p>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="main.html" class="logo" aria-current="page">SAKURA</a>
+    <nav class="navbar">
+        <a href="main.html#featured">featured</a>
+        <a href="main.html#services">services</a>
+        <a href="about.html#about-us">about us</a>
+        <a href="faq.html#faq">FAQ</a>
+        <a href="contact.html">contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="login.html"><i class="fas fa-user"></i> Login/Signup</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <form action="">
+
+        <h3>find your perfect home</h3>
+
+        <div class="buttons-container">
+            <a href="#" class="btn">for rent</a>
+            <a href="#" class="btn">for sell</a>
+        </div>
+
+        <div class="inputBox">
+            <select name="" id="">
+                <option value="" disabled hidden selected>Minimum Price</option>
+                <option value="10php">₱8,000</option>
+                <option value="20php">₱10,000</option>
+                <option value="30php">₱15,000</option>
+                <option value="40php">₱30,000</option>
+                <option value="50php">₱50,000</option>
+                <option value="60php">₱60,000</option>
+                <option value="70php">₱90,000</option>
+        
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Maximum Price</option>
+                <option value="20php">₱300,000</option>
+                <option value="40php">₱500,000</option>
+                <option value="60php">₱700,000</option>
+                <option value="100php">₱900,000</option>
+                <option value="150php">₱2,000,000</option>
+                <option value="200php">₱3,000,000</option>
+                <option value="250php">₱5,000,000</option>
+                
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Property Status</option>
+                <option value="furnished">Furnished</option>
+                <option value="semi-furnished">Semi-furnished</option>
+                <option value="unfurnished">Unfurnished</option>
+            </select> 
+            <select name="" id="">
+                <option value="" disabled hidden selected>Property Type</option>
+                <option value="apartment">Condo</option>
+                <option value="house">House</option>
+                <option value="residential">Residential</option>
+                <option value="single family">Single Family</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bedrooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+            </select>
+            <select name="" id="">
+                <option value="" disabled hidden selected>Bathrooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              
+            </select>
+
+
+            <input type="search" name="" placeholder="Enter your location/city" id="">
+        </div>
+
+        <input type="submit" value="search property" class="btn" require="require">
+        
+
+    </form>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+<!---Inquire-->
+
+<section class="inquire" id="inquire">
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>INQUIRE NOW</h3>
+            <p>Sent your request here</p>
+            
+            <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last Name" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" name="phoneNumber" pattern="[0-9]{1}-[0-9]{10}" required>
+                
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="form-group">
+                <textarea rows="3" placeholder="Message to us!"></textarea>
+                    </div>
+            
+                
+                <div class="checkbox-wrapper-1">
+                    <input id="example-1" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-1" style="text-transform: none;">I want to receive News and Updates about Sakura Real Estate</label>
+                    <input id="example-2" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-2" style="text-transform: none;">I have read and agree with the website's Privacy Policy and Terms of Use</label>
+                  </div>
+                  
+                  <style>
+                    .checkbox-wrapper-1 *,
+                    .checkbox-wrapper-1 ::after,
+                    .checkbox-wrapper-1 ::before {
+                      box-sizing: border-box;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted {
+                      margin: 0;
+                      width: 0;
+                      height: 0;
+                      display: inline;
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      appearance: none;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted + label:before {
+                      content: "";
+                      display: inline-block;
+                      vertical-align: top;
+                      height: 1.15em;
+                      width: 1.15em;
+                      margin-right: 0.6em;
+                      color: rgba(0, 0, 0, 0.275);
+                      border: solid 0.06em;
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+                      border-radius: 0.2em;
+                      background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>') no-repeat center, white;
+                      background-size: 0;
+                      will-change: color, border, background, background-size, box-shadow;
+                      transform: translate3d(0, 0, 0);
+                      transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:enabled + label:active:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+                      background-color: #f0f0f0;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked + label:before {
+                      background-color: #3B99FC;
+                      background-size: 0.75em;
+                      color: rgba(0, 0, 0, 0.075);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled + label:active:before {
+                      background-color: #0a7ffb;
+                      color: rgba(0, 0, 0, 0.275);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:active:before {
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted:disabled + label:before {
+                      opacity: 0.5;
+                    }
+                  
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark + label:before {
+                      color: rgba(255, 255, 255, 0.275);
+                      background-color: #222;
+                      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="rgba(34, 34, 34, 0.999)" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>');
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled + label:active:before {
+                      background-color: #444;
+                      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked + label:before {
+                      background-color: #a97035;
+                      color: rgba(255, 255, 255, 0.075);
+                    }
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active + label:before,
+                    .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled + label:active:before {
+                      background-color: #c68035;
+                      color: rgba(0, 0, 0, 0.275);
+                    }
+                  </style>
+                  
+               
+                <button type="submit" require="require">Submit</button>
+        </div>
+        <div class="contact-right">
+            <h3>WELCOME TO SAKURA REAL ESTATE</h3>
+            <p>At Sakura Real Estate, we understand that finding the perfect home is not just about square footage
+                and amenities; it's about finding a place where memories are made, where dreams take shape, and where the
+                 heart finds its haven. With Sakura, you're not just buying a property; you're investing in a lifestyle, a community, 
+                 and a future filled with possibilities.</p>
+
+            <p>When you choose Sakura Real Estate, you're not just choosing a company; you're choosing a partner who is dedicated to helping you turn your real 
+                estate dreams into reality. Welcome home with Sakura Real Estate, where every property tells a story and every client is family.</p>
+            
+            <p>When you choose Sakura Real Estate, you're not just selecting a company; you're forging a partnership dedicated to turning your real estate dreams into reality.
+                 Welcome home to Sakura Real Estate, where every property tells a story, and every client becomes part of our family.</p>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> properties </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/condoo.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱120,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Air Residence, Bacolod</h3>
+                    <p> HSRC Home Building, Burgos St, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 1,065 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 2 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                    <h4> <i class="fas fa-info"></i>Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/house2.jpg" alt="">
+                <div class="info">
+                    <h3>6 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱14,100,000</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Ready for occupancy</h3>
+                    <p> Tangub, Handumanan Access Road, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 2,281 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 5 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 3 baths </h3>
+                    <h4> <i class="fas fa-info"></i>Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/luxury1.jpg" alt="">
+                <div class="info">
+                    <h3>1 days ago</h3>
+                    <h3>for sale</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱3,444,892,000</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Residential Home, Bacolod</h3>
+                    <p> Corazon C. Aquino Ave. Purok Rosas, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 7,240 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 6 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 7 baths </h3>
+                    <h4> <i class="fas fa-info"></i>Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/single1.jpg" alt="">
+                <div class="info">
+                    <h3>9 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱8,420,000</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Ready for occupancy</h3>
+                    <p>Tangub, Handumanan Access Road, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 2,690 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 3 baths </h3>
+                    <h4> <i class="fas fa-info"></i>Semi-Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/condoo2.jpg" alt="">
+                <div class="info">
+                    <h3>10 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱13,571/36Mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3> The Royalton Residences </h3>
+                    <p>Condominium comples, Cordova Ave(Buri Road) Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 452 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 1 bed </h3>
+                    <h3> <i class="fas fa-bath"></i> 1 bath </h3>
+                    <h4> <i class="fas fa-info"></i>Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/house6.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱115,000,000</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Ready for occupancy</h3>
+                    <p>Tangub, Handumanan Access Road, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3,229 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 5 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 5 baths </h3>
+                    <h4> <i class="fas fa-info"></i>furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/luxury5.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱5,000,100,995</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Residential Home, Bacolod</h3>
+                    <p>Corazon C. Aquino Ave. Purok Rosas, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 8,100 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 7 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 8 baths </h3>
+                    <h4> <i class="fas fa-info"></i>Furnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="images/single4.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for sale</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>₱13,050,100</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Ready for occupancy</h3>
+                    <p>Tangub, Handumanan Access Road, Bacolod</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 1,910 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 4 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 3 baths </h3>
+                    <h4> <i class="fas fa-info"></i>UnFurnished</h4>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">request info</a>
+                    <a href="#" class="btn">view details</a>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+    
+</section>
+
+<!-- featured section ends -->
+
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="housesell.png" alt="" width="200" height="200">
+            <h3>Buying a home</h3>
+            <p>
+               
+Sakura Real Estate, your trusted partner in buying your dream home, offers comprehensive services ensuring a stress-free process. From personalized property searches to expert negotiation guidance, we're committed to finding your perfect home. Our experienced agents provide unparalleled market knowledge, supporting informed decisions. With Sakura Real Estate, your dream home is within reach, offering confidence and peace of mind in your move.
+            </p>
+            <a href="homes.html" class="btn"> Browse homes</a>
+        </div>
+
+        <div class="box">
+            <img src="condorent.png" alt="" width="200" height="200">
+            <h3>Rent a home</h3>
+            <p>Sakura Real Estate excels in assisting you in finding the ideal home for rent, offering personalized services and enrich your rental journey. 
+                Our devoted team comprehends your unique criteria, ensuring a curated selection of condos matching your needs. We manage viewings, inspections, lease negotiations, and paperwork with professionalism, ensuring a stress-free rental experience.
+                 With Sakura Real Estate, renting a condo becomes effortless, empowering you into your new home confidently and securely.
+                </p>
+            <a href="rent.html" class="btn"> Find Rentals</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+<!-- footer section starts  -->
+
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+            
+            
+            <div class="box">
+                <h4 class="fas fa-map-marker-alt">SAKURA</h4>
+                <h1>40th Floor</h1>
+                <h1>JXF2+VWR, Bacolod, Negros Occidental, 6100</h1>
+
+                <h1><i class="fa fa-phone"></i>09771768932</h1>
+                <h1><i class="fa fa-envelope"></i>info@gmail.com</h1>
+            </div> 
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">featured</a>
+                <a href="#">services</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">contact us</a>
+            </div> 
+
+            <div class="box">
+                <h3>Property Seekers</h3>
+                <a href="#">Buy a Property</a>
+                <a href="#">Rent a property</a>
+                <a href="agents.html">find an agent</a>
+                <a href="comment.html">reviews</a>
+            </div> 
+
+            <div class="box">
+                <h3>follow us</h3>
+                 <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                 <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                 <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                 <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </div> 
+
+        </div>
+
+        <div class="credit">Copyright © 2024 SAKURA Philippines | all rights reserved! </div>
+
+    </div>
+
+</section>
+
+
+<!-- footer section ends -->
+
+
+
+
+<!-- javascript part  -->
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+}
+
+
+
+</script>
+
 </body>
 </html>
